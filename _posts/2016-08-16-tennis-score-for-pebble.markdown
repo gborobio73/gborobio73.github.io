@@ -5,7 +5,7 @@ categories: [pebble]
 tags: [pebble]
 ---
 Do you play tennis and own a Pebble watch? Now you can keep track of the score in your wrist! <br>
-**Tennis Score** for Pebble tracks points, games, sets and who is serving. Update the score by pressing a button; undo available. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows current time and match duration.
+[**Tennis Score**](https://apps.getpebble.com/applications/57b1c129bb85ed22da0004ce) for Pebble tracks points, games, sets and who is serving. Update the score by pressing a button; undo available. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows current time and match duration.
 <br>**Tennis Score** for Pebble works in Pebble Time Round, Time Steel, Time, Steel and Classic.
 
 ## Usage
