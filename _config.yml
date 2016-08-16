@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
+title: Gonzalo Borobio
+description: '"This is my site. There are many like it, but this one is mine."'
+url: 'http://gborobio73.github.io'
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Gonzalo Borobio'
+  email: gborobio@gmail.com
+  twitter_username: gborobio
+  facebook_username: 
+  github_username:  gborobio73
+  linkedin_username:  
 
 defaults:
   -

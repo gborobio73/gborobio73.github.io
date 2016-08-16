@@ -1,25 +1,60 @@
 ---
-title:  "Welcome to Jekyll!"
+title:  "Tennis Score for Pebble"
 date:   2016-01-08 15:04:23
-categories: [jekyll]
-tags: [jekyll]
+categories: [pebble]
+tags: [pebble]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+Do you play tennis and own a Pebble watch? Now you can keep track of the score in your wrist! <br>
+**Tennis Score** for Pebble tracks points, games, sets and who is serving. Update the score by pressing a button; undo available. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows current time and match duration.
+<br>**Tennis Score** for Pebble works in Pebble Time Round, Time Steel, Time, Steel and Classic.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Usage
+**Menu**
 
-Jekyll also offers powerful support for code snippets:
+- Select whether you will play best of 3 or best of 5 sets
 
-``` ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+- Select who starts serving
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+- Start match!
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+**Match**
+
+Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
+
+- Up: point to your opponent
+
+- Down: point to you
+
+- Select: undo last point; as many times as you want
+
+- Back: exit to main menu
+
+**Score**
+
+- Upper row: your opponent score
+
+- Lower row: your score
+
+- Left time: current time
+
+- Right time: match duration in minutes
+
+- Asterisk: who is serving
+
+## Screenshots
+
+![](../../images/pebble-time-round-black-menu.png)
+
+![](../../images/pebble-time-round-red-score.png)
+
+![](../../images/pebble-time-red-menu.png)
+
+![](../../images/pebble-time-black_score.png)
+
+![](../../images/pebble-orange-score.png)
+
+## About
+
+Dialog and message windows are based on Pebble examples [UI Patterns](https://github.com/pebble-examples/ui-patterns):
+
+Limitations: **Tennis Score** for Pebble keeps track up to 180 points for Pebble Classic and Steel, and up to 600 points for other models.
