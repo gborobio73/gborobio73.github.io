@@ -59,4 +59,4 @@ Dialog and message windows are based on Pebble examples [UI Patterns](https://gi
 
 Limitations: **Tennis Score** for Pebble keeps track up to 180 points for Pebble Classic and Steel, and up to 600 points for other models.
 
-**Tennis Score** for Pebble is my first ever app for Pebble. It's written in C and it has been a great fun; I plan to add more features :)
+**Tennis Score** for Pebble is my first ever app for Pebble and it's written in C. It has been a great fun and I plan to add more features.
