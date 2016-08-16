@@ -58,3 +58,5 @@ Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
 Dialog and message windows are based on Pebble examples [UI Patterns](https://github.com/pebble-examples/ui-patterns):
 
 Limitations: **Tennis Score** for Pebble keeps track up to 180 points for Pebble Classic and Steel, and up to 600 points for other models.
+
+**Tennis Score** for Pebble is my first ever app for Pebble. It's written in C and it has been a great fun; I plan to add more features :)
