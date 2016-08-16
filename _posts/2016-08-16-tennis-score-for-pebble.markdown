@@ -4,9 +4,9 @@ date:   2016-01-08 15:04:23
 categories: [pebble]
 tags: [pebble]
 ---
-Do you play tennis and own a Pebble watch? Now you can keep track of the score in your wrist! <br>
-[**Tennis Score**][pebbleapp] for Pebble tracks points, games, sets and who is serving. Update the score by pressing a button; undo available. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows current time and match duration.
-<br>[**Tennis Score**][pebbleapp] for Pebble works in Pebble Time Round, Time Steel, Time, Steel and Classic.
+Do you play tennis and own a [Pebble][pebble] watch? Now you can keep track of the score in your wrist! <br>
+[**Tennis Score**][pebbleapp] for [Pebble][pebble] tracks points, games, sets and who is serving. Update the score by pressing a button; undo available. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows current time and match duration.
+<br>[**Tennis Score**][pebbleapp] for [Pebble][pebble] works in Pebble Time Round, Time Steel, Time, Steel and Classic.
 
 ## Usage
 **Menu**
@@ -57,8 +57,9 @@ Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
 
 Dialog and message windows are based on Pebble examples [UI Patterns](https://github.com/pebble-examples/ui-patterns):
 
-Limitations: [**Tennis Score**][pebbleapp] for Pebble keeps track up to 180 points for Pebble Classic and Steel, and up to 600 points for other models.
+Limitations: [**Tennis Score**][pebbleapp] for [Pebble][pebble] keeps track up to 180 points for Pebble Classic and Steel, and up to 600 points for other models.
 
-[**Tennis Score**][pebbleapp] for Pebble is my first ever app for Pebble and it's written in C.
+[**Tennis Score**][pebbleapp] for [Pebble][pebble] is my first ever app for Pebble and it's written in C.
 
 [pebbleapp]: https://apps.getpebble.com/applications/57b1c129bb85ed22da0004ce
+[pebble]: https://www.pebble.com/
