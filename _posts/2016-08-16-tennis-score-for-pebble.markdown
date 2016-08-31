@@ -1,8 +1,8 @@
 ---
 title:  "Tennis Score for Pebble"
-date:   2016-01-08 15:04:23
-categories: [pebble]
-tags: [pebble]
+date:   2016-08-16 15:04:23
+categories: [smart watch, software development]
+tags: [pebble, C, tennis]
 ---
 Do you play tennis and own a [Pebble][pebble] watch? Now you can keep track of the score in your wrist! <br>
 [**Tennis Score**][pebbleapp] for [Pebble][pebble] tracks points, games, sets and who is serving. Update the score by pressing a button; undo available. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows current time and match duration.
