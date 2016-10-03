@@ -67,7 +67,7 @@ Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
 
 ![](../../images/pebble-time-red-points-won.png)
 
-![](../../images/pebble-time-round-red-match-duration.png)
+![](../../images/pebble-time-red-match-duration.png)
 
 ![](../../images/pebble-time-round-red-sets-duration.png)
 
