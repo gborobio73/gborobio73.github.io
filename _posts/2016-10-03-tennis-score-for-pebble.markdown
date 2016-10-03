@@ -19,7 +19,7 @@ Do you play tennis and own a [Pebble][pebble] watch? Now you can keep track of t
 
 **Match**
 
-Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
+Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score:
 
 - Up: point to your opponent
 
@@ -42,6 +42,8 @@ Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
 - Asterisk: who is serving
 
 **Statistics**
+
+Scroll down at the end of the match:
 
 - Match score
 
