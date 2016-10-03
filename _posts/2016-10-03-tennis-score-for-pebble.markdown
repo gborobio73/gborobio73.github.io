@@ -77,8 +77,7 @@ Scroll down at the end of the match:
 
 
 ## About
-
-Download [here][pebbleapp] from Pebble app store.
+Pebble app store [here][pebbleapp].
 
 Code is [here](https://github.com/gborobio73/tennis-score-c).
 
