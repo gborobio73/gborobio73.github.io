@@ -1,6 +1,6 @@
 ---
 title:  "Tennis Score for Pebble"
-date:   2016-08-16 15:04:23
+date:   2016-10-03 15:04:23
 categories: [smart watch, software development]
 tags: [pebble, C, tennis]
 ---
