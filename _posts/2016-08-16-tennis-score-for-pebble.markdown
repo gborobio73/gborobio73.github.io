@@ -54,6 +54,7 @@ Use [buttons](http://i.imgur.com/4i9NeDU.jpg) to track the score :
 ![](../../images/pebble-orange-score.png)
 
 ## About
+Code is [here](https://github.com/gborobio73/tennis-score-c).
 
 Dialog and message windows are based on Pebble examples [UI Patterns](https://github.com/pebble-examples/ui-patterns):
 
