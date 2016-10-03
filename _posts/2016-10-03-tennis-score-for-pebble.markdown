@@ -5,7 +5,7 @@ categories: [smart watch, software development]
 tags: [pebble, C, tennis]
 ---
 Do you play tennis and own a [Pebble][pebble] watch? Now you can keep track of the score in your Pebble! <br>
-[**Tennis Score**][pebbleapp] for [Pebble][pebble] tracks points, games, sets and serves. Update the score by pressing a button. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows both current time and match duration. Check statistics at the end of the match
+[**Tennis Score**][pebbleapp] for [Pebble][pebble] tracks points, games, sets and serves. Update the score by pressing a button. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows both current time and match duration. Check the statistics at the end of the match
 <br>[**Tennis Score**][pebbleapp] for [Pebble][pebble] works in Pebble 2, Pebble Time Round, Time Steel, Time, Steel and Classic.
 
 ## Usage
