@@ -31,7 +31,7 @@ Now your both cyborg pets can fly, beautiful.
 
 And now you realize it would be great if they could also run. But wait, we have a problem: you shouldn’t add run behaviour to a FlyingCyborg class (not to break the Single Responsibility Principle <sup>[ (3) ](#fnThree)</sup>, and Java doesn’t allow multi-inheritance! Oh, no, horror!
 
-Default methods to the rescue!
+**Default methods to the rescue!**
 
 Yes, thank you Java 8! Now we can work around all these nasty impediments and make our code great again! 
 
