@@ -22,12 +22,9 @@ public abstract class FlyingCyborg {
 	//Move wings up and down
 	}
 }
+public class Duck extends FlyingCyborg { }
 
-public class Duck extends FlyingCyborg {
-}
-
-public class Owl extends FlyingCyborg {	
-}
+public class Owl extends FlyingCyborg {	}
 {% endhighlight %}
 
 Now your both cyborg pets can fly, beautiful.
@@ -46,10 +43,9 @@ public interface RunningCyborg {
 	}
 }
 
-public class Duck extends FlyingCyborg implements RunningCyborg {
-}
-public class Owl extends FlyingCyborg implements RunningCyborg {	
-}
+public class Duck extends FlyingCyborg implements RunningCyborg { }
+
+public class Owl extends FlyingCyborg implements RunningCyborg { }
 {% endhighlight %}
 
 Voilà! Our pets can now fly and run. There’s one optimization though: make FlyingCyborg to implement RunningCyborg and our pets will inherit run out of the box. 
