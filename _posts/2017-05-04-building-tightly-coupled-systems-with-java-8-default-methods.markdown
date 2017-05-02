@@ -59,7 +59,7 @@ Now, your pets will have to sleep, won’t they?
 public interface SleepingCyborg {
 	default sleep() {}
 }
-[…]
+etc...
 {% endhighlight %}
 
 Beautiful, isn’t it?
@@ -70,9 +70,16 @@ No, it is not. It’s horrible! If you haven’t noticed it, I’m being ironic,
 
 As weird as all of this might sound, I’m currently working on a project where default methods are used this way, and not to provide backwards compatibility. Those classes have no unit tests, of course. 
 
+<a name="myfootnote1">1</a>: https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
+
 (1)	https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
+
 (2)	No, of course not.
+
 (3)	https://en.wikipedia.org/wiki/Single_responsibility_principle
+
 (4)	https://en.wikipedia.org/wiki/Monolithic_application
+
 (5)	There might be a way you can mock a default method, but you would at least need a composite instead of inheritance
+
 (6)	https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose
