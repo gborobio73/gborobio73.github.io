@@ -9,10 +9,10 @@ tags: [java 8, default methods, coupling, software development]
 One of the new features of Java 8 is the concept of default methods in interfaces<sup>[ (1)](#fnOne)</sup>.
 > “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
 
-This is excellent: you can now extend your interfaces without breaking current implementation (backwards compatibility).
+This is excellent, you can now extend your interfaces without breaking current implementation (backwards compatibility).
 As great as this idea is, developers have found another usage for default interfaces: **build tightly coupled systems that look loosely coupled**.
 
-Let’s say I'm building a couple of IoT cyborg pets to keep me company: A duck and an owl. My code would look something like this:
+Let’s say I'm building a couple of IoT cyborg pets to keep me company, a duck and an owl. My code would look something like this:
 {% highlight java %}
 public class Duck {}
 public class Owl {} 
@@ -29,9 +29,9 @@ public class Duck extends FlyingCyborg { }
 
 public class Owl extends FlyingCyborg {	}
 {% endhighlight %}
-My cyborg pets can now `fly`, beautiful.
+My cyborg pets can now `fly`. Beautiful.
 
-It would be great if they couls also `run`. But wait, I have a problem: I cannot add `run` behaviour to the FlyingCyborg class, or I would break the Single Responsibility Principle<sup>[ (3)](#fnThree)</sup>, and Java doesn’t allow multi-inheritance. Oh, no, horror!
+It would be great if they could also `run`. But wait, I have a problem: I cannot add `run` behaviour to the FlyingCyborg class, or I would break the Single Responsibility Principle<sup>[ (3)](#fnThree)</sup>, and Java doesn’t allow multi-inheritance. Oh no, horror!
 
 **Default methods to the rescue!**
 
@@ -49,7 +49,7 @@ public class Duck extends FlyingCyborg implements RunningCyborg { }
 
 public class Owl extends FlyingCyborg implements RunningCyborg { }
 {% endhighlight %}
-Voilà! My pets can now `fly` and `run`. There’s one optimization though: I can make FlyingCyborg to implement RunningCyborg and my pets will inherit `run` out of the box. 
+Voilà! My pets can now `fly` and `run`. There’s one optimization though, I can make FlyingCyborg to implement RunningCyborg and my pets will inherit `run` out of the box. 
 
 Now, they will have to sleep, won’t they? 
 {% highlight java %}
@@ -65,7 +65,7 @@ public class Owl extends FlyingCyborg implements RunningCyborg, SleepingCyborg {
 {% endhighlight %}
 And so on, and so forth. Beautiful, isn’t it?
 
-**No, it's not. It’s horrible!** If you haven’t noticed it, I’m being ***ironic***, ***sarcastic***. This is wrong, really wrong. I have built a tightly coupled system<sup>[ (5)](#fnFive)</sup>. My cyborgs pets are tightly coupled to the abstract class, and to the interfaces; I cannot test them separately: mocking an abstract base classe is hard, and how do I even mock a default method?<sup>[ (6)](#fnSix)</sup>. And how do I test it?
+**No, it's not. It’s horrible!** If you haven’t noticed it, this is me being ***ironic***. This is wrong, really wrong. I have built a tightly coupled system<sup>[ (5)](#fnFive)</sup>. My cyborg pets are tightly coupled to the abstract class and to the interfaces. I cannot test them separately: mocking an abstract base classe is hard and how do I even mock a default method?<sup>[ (6)](#fnSix)</sup>. And how do I test it?
 
 “Favour composition over inheritance”, in case you haven’t heard before<sup>[ (7)](#fnSeven)</sup>.
 
