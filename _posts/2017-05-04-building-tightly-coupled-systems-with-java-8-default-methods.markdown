@@ -35,7 +35,7 @@ It would be great if they could also `run`. But wait, I have a problem: I cannot
 
 **Default methods to the rescue!**
 
-Yes, thank you Java 8! Now I can work around all these nasty impediments<sup>[ (4) ](#fnFour)</sup>and make our code great again! 
+Yes, thank you Java 8! Now I can work around all these nasty impediments<sup>[ (4) ](#fnFour)</sup>and make my code great again! 
 
 Easy as f**k: I create an interface RunningCyborg with one default method `run`, and I make my lovely pets to implement this interface. This way my cyborgs will inherit `run` behaviour:
 {% highlight java %}
