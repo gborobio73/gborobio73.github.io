@@ -5,9 +5,10 @@ categories: [java 8, default methods, coupling, software development]
 tags: [java 8, default methods, coupling, software development]
 ---
 
-One of the new features of Java 8 is the concept of default methods in interfaces. Documentation says<sup>[ (1) ](#fnOne)</sup>:> “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
+One of the new features of Java 8 is the concept of default methods in interfaces<sup>[ (1) ](#fnOne)</sup>.
+> “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
 
-This is a great idea: you can now extend your interfaces without breaking current implementation (backwards compatibility).
+This is a great idea: you can extend your interfaces without breaking current implementation (backwards compatibility).
 As great as this idea is, developers have found another usage for default interfaces: **build tightly coupled systems that look loosely coupled**.
 
 Let’s say you are building some IoT cyborg pets to keep you company: A Duck and an Owl. Your code would look something like this:
@@ -26,7 +27,6 @@ public class Duck extends FlyingCyborg { }
 
 public class Owl extends FlyingCyborg {	}
 {% endhighlight %}
-
 Now your both cyborg pets can `fly`, beautiful.
 
 And now you realize it would be great if they could also `run`. But wait, we have a problem: you shouldn’t add `run` behaviour to a FlyingCyborg class, not to break the Single Responsibility Principle <sup>[ (3) ](#fnThree)</sup>, and Java doesn’t allow multi-inheritance! Oh, no, horror!
@@ -47,7 +47,6 @@ public class Duck extends FlyingCyborg implements RunningCyborg { }
 
 public class Owl extends FlyingCyborg implements RunningCyborg { }
 {% endhighlight %}
-
 Voilà! Our pets can now `fly` and `run`. There’s one optimization though: make FlyingCyborg to implement RunningCyborg and our pets will inherit `run out of the box. 
 
 Now, your pets will have to sleep, won’t they? 
@@ -59,14 +58,13 @@ public interface SleepingCyborg {
 }
 etc...
 {% endhighlight %}
-
 Beautiful, isn’t it?
 
 No, it is not. It’s horrible! If you haven’t noticed it, I’m being ironic, sarcastic. This is wrong, really wrong. We have built a tightly coupled system<sup>[ (5) ](#fnFive)</sup>. Our cyborgs are deeply coupled to the abstract class and to the interfaces; we cannot test them separately: mocking abstract base classes is hard, and how do you even mock a default method?<sup>[ (6) ](#fnSix)</sup>. And test it?
 
 “Favour composition over inheritance”. In case you haven’t heard before<sup>[ (7) ](#fnSeven)</sup>.
 
-As weird as all of this might sound, I’m currently working on a project where default methods are used this way, and not to provide backwards compatibility. Those classes have no unit tests, of course. 
+As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way.
 
 <a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
 
