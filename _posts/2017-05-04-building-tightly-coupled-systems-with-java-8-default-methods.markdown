@@ -15,7 +15,7 @@ Let’s have an example: Let’s say you are building some cyborg pets to keep y
 public class Duck {}
 public class Owl {} 
 {% endhighlight %}
-Now you want to add fly behaviour to them, and it’s common to both. How do you achieve that? By inheritance, of course <sup>[ (2) ](#fnTwo)</sup>: You create a base abstract class, add the fly behaviour there and make your cyborgs to extend the base class:
+Now you want to add `fly` behaviour to them, and it’s common to both. How do you achieve that? By inheritance, of course <sup>[ (2) ](#fnTwo)</sup>: You create a base abstract class, add the `fly` behaviour there and make your cyborgs to extend the base class:
 {% highlight java %}
 public abstract class FlyingCyborg {	
 	public void fly() {
@@ -27,19 +27,19 @@ public class Duck extends FlyingCyborg { }
 public class Owl extends FlyingCyborg {	}
 {% endhighlight %}
 
-Now your both cyborg pets can fly, beautiful.
+Now your both cyborg pets can `fly`, beautiful.
 
-And now you realize it would be great if they could also run. But wait, we have a problem: you shouldn’t add run behaviour to a FlyingCyborg class (not to break the Single Responsibility Principle <sup>[ (3) ](#fnThree)</sup>, and Java doesn’t allow multi-inheritance! Oh, no, horror!
+And now you realize it would be great if they could also `run`. But wait, we have a problem: you shouldn’t add `run` behaviour to a FlyingCyborg class (not to break the Single Responsibility Principle <sup>[ (3) ](#fnThree)</sup>, and Java doesn’t allow multi-inheritance! Oh, no, horror!
 
 **Default methods to the rescue!**
 
 Yes, thank you Java 8! Now we can work around all these nasty impediments and make our code great again! 
 
-Easy as f**k: we create an interface RunningCyborg with one default method run, and make our lovely pets to implement this interface. This way our cyborgs will inherit run behaviour:
+Easy as f**k: we create an interface RunningCyborg with one default method `run`, and make our lovely pets to implement this interface. This way our cyborgs will inherit `run` behaviour:
 {% highlight java %}
 public interface RunningCyborg {
 	default void run() {
-		//run cyborg, run
+		//move legs
 	}
 }
 
@@ -48,12 +48,14 @@ public class Duck extends FlyingCyborg implements RunningCyborg { }
 public class Owl extends FlyingCyborg implements RunningCyborg { }
 {% endhighlight %}
 
-Voilà! Our pets can now fly and run. There’s one optimization though: make FlyingCyborg to implement RunningCyborg and our pets will inherit run out of the box. 
+Voilà! Our pets can now `fly` and `run`. There’s one optimization though: make FlyingCyborg to implement RunningCyborg and our pets will inherit `run out of the box. 
 
 Now, your pets will have to sleep, won’t they? 
 {% highlight java %}
 public interface SleepingCyborg {
-	default sleep() {}
+	default sleep() { 
+		// close eyes
+	}
 }
 etc...
 {% endhighlight %}
