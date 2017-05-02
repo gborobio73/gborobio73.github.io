@@ -4,6 +4,7 @@ date:   2017-05-04 15:04:23
 categories: [java 8, default methods, coupling, software development]
 tags: [java 8, default methods, coupling, software development]
 ---
+<small>3 min read</small>
 
 One of the new features of Java 8 is the concept of default methods in interfaces<sup>[ (1) ](#fnOne)</sup>.
 > “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
@@ -47,7 +48,7 @@ public class Duck extends FlyingCyborg implements RunningCyborg { }
 
 public class Owl extends FlyingCyborg implements RunningCyborg { }
 {% endhighlight %}
-Voilà! Our pets can now `fly` and `run`. There’s one optimization though: make FlyingCyborg to implement RunningCyborg and our pets will inherit `run out of the box. 
+Voilà! Our pets can now `fly` and `run`. There’s one optimization though: make FlyingCyborg to implement RunningCyborg and our pets will inherit `run` out of the box. 
 
 Now, your pets will have to sleep, won’t they? 
 {% highlight java %}
