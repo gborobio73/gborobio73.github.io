@@ -12,7 +12,7 @@ One of the new features of Java 8 is the concept of default methods in interface
 This is excellent: you can now extend your interfaces without breaking current implementation (backwards compatibility).
 As great as this idea is, developers have found another usage for default interfaces: **build tightly coupled systems that look loosely coupled**.
 
-Let’s say I'm building a couple of IoT cyborg pets to keep you company: A duck and an owl. My code would look something like this:
+Let’s say I'm building a couple of IoT cyborg pets to keep me company: A duck and an owl. My code would look something like this:
 {% highlight java %}
 public class Duck {}
 public class Owl {} 
