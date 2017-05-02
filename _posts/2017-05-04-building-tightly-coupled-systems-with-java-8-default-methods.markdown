@@ -5,7 +5,7 @@ categories: [java 8, default methods, coupling, software development]
 tags: [java 8, default methods, coupling, software development]
 ---
 
-One of the new features of Java 8 is the concept of default methods in interfaces. Documentation says that<sup>[1](#myfootnote1)</sup> “default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
+One of the new features of Java 8 is the concept of default methods in interfaces. Documentation says that<sup>[ (1) ](#myfootnote1)</sup> “default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
 
 This a great idea: you can now extend your interfaces without breaking current implementation (backwards compatibility).
 As great as this idea is, developers around the world have found another use for default interfaces: building tightly coupled systems that look loosely coupled.
@@ -70,7 +70,7 @@ No, it is not. It’s horrible! If you haven’t noticed it, I’m being ironic,
 
 As weird as all of this might sound, I’m currently working on a project where default methods are used this way, and not to provide backwards compatibility. Those classes have no unit tests, of course. 
 
-<a name="myfootnote1">1</a>: https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
+<a name="myfootnote1">(1)</a>: https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
 
 (1)	https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html
 
