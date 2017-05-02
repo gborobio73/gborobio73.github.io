@@ -56,15 +56,18 @@ public interface SleepingCyborg {
 		// close eyes
 	}
 }
-etc...
+
+public class Duck extends FlyingCyborg implements RunningCyborg, SleepingCyborg { }
+
+public class Owl extends FlyingCyborg implements RunningCyborg, SleepingCyborg { }
 {% endhighlight %}
-Beautiful, isn’t it?
+And so on, and so forth. Beautiful, isn’t it?
 
 No, it is not. It’s horrible! If you haven’t noticed it, I’m being ironic, sarcastic. This is wrong, really wrong. We have built a tightly coupled system<sup>[ (5) ](#fnFive)</sup>. Our cyborgs are deeply coupled to the abstract class and to the interfaces; we cannot test them separately: mocking abstract base classes is hard, and how do you even mock a default method?<sup>[ (6) ](#fnSix)</sup>. And test it?
 
 “Favour composition over inheritance”. In case you haven’t heard before<sup>[ (7) ](#fnSeven)</sup>.
 
-As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way.
+As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way. It's wild wild west.
 
 <a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
 
