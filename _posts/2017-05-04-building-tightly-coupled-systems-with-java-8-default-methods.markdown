@@ -20,7 +20,7 @@ Now you want to add a common `fly` behaviour to them, how do you achieve that? B
 {% highlight java %}
 public abstract class FlyingCyborg {	
 	public void fly() {
-	//Move wings up and down
+		//implementation goes here e.g. move wings
 	}
 }
 public class Duck extends FlyingCyborg { }
@@ -39,7 +39,7 @@ Easy as f**k: we create an interface RunningCyborg with one default method `run`
 {% highlight java %}
 public interface RunningCyborg {
 	default void run() {
-		//move legs
+		//implementation goes here e.g. move legs, or wheels
 	}
 }
 
@@ -53,7 +53,7 @@ Now, your pets will have to sleep, won’t they?
 {% highlight java %}
 public interface SleepingCyborg {
 	default sleep() { 
-		// close eyes
+		//implementation goes here e.g. shut systems down
 	}
 }
 
