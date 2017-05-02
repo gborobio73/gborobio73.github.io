@@ -8,7 +8,7 @@ tags: [java 8, default methods, coupling, software development]
 One of the new features of Java 8 is the concept of default methods in interfaces<sup>[ (1) ](#fnOne)</sup>.
 > “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
 
-This is a great idea: you can extend your interfaces without breaking current implementation (backwards compatibility).
+This is excellent: you can extend your interfaces without breaking current implementation (backwards compatibility).
 As great as this idea is, developers have found another usage for default interfaces: **build tightly coupled systems that look loosely coupled**.
 
 Let’s say you are building some IoT cyborg pets to keep you company: A Duck and an Owl. Your code would look something like this:
