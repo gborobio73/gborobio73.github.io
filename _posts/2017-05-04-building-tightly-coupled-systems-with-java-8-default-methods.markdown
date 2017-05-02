@@ -66,14 +66,14 @@ No, it is not. It’s horrible! If you haven’t noticed it, I’m being ironic,
 
 As weird as all of this might sound, I’m currently working on a project where default methods are used this way, and not to provide backwards compatibility. Those classes have no unit tests, of course. 
 
-<a name="fnOne">(1)</a> [https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html]
+<a name="fnOne">(1)</a> [https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html] (https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
 
 <a name="fnTwo">(2)</a>	No, of course not.
 
-<a name="fnThree">(3)</a> https://en.wikipedia.org/wiki/Single_responsibility_principle
+<a name="fnThree">(3)</a> [https://en.wikipedia.org/wiki/Single_responsibility_principle] (https://en.wikipedia.org/wiki/Single_responsibility_principle)
 
-<a name="fnFour">(4)</a> https://en.wikipedia.org/wiki/Monolithic_application
+<a name="fnFour">(4)</a> [https://en.wikipedia.org/wiki/Monolithic_application] (https://en.wikipedia.org/wiki/Monolithic_application)
 
 <a name="fnFive">(5)</a> There might be a way you can mock a default method, but you would at least need a composite instead of inheritance
 
-<a name="fnSix">(6)</a> https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose
+<a name="fnSix">(6)</a> [https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose] (https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose)
