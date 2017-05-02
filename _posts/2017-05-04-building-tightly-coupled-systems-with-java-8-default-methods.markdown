@@ -1,6 +1,6 @@
 ---
 title:  "Building tightly coupled systems using Java 8 default methods"
-date:   2017-05-04 15:04:23
+date:   2017-05-02 15:04:23
 categories: [java 8, default methods, coupling, software development]
 tags: [java 8, default methods, coupling, software development]
 ---
