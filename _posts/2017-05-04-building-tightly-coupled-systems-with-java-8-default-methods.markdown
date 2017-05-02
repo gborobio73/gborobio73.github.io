@@ -24,6 +24,7 @@ public abstract class FlyingCyborg {
         //implementation goes here e.g. move wings
     }
 }
+
 public class Duck extends FlyingCyborg { }
 
 public class Owl extends FlyingCyborg {	}
