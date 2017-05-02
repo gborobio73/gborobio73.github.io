@@ -4,7 +4,7 @@ date:   2017-05-04 15:04:23
 categories: [java 8, default methods, coupling, software development]
 tags: [java 8, default methods, coupling, software development]
 ---
-<small>3 min read</small>
+<sub>3 min read</sub>
 
 One of the new features of Java 8 is the concept of default methods in interfaces<sup>[ (1) ](#fnOne)</sup>.
 > “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
