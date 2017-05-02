@@ -20,9 +20,9 @@ public class Owl {}
 Now you want to add a common `fly` behaviour to them, how do you achieve that? By inheritance, of course <sup>[ (2)](#fnTwo)</sup>: You create a base abstract class, add the `fly` behaviour there, and make your cyborgs to extend the base class:
 {% highlight java %}
 public abstract class FlyingCyborg {	
-	public void fly() {
-		//implementation goes here e.g. move wings
-	}
+    public void fly() {
+        //implementation goes here e.g. move wings
+    }
 }
 public class Duck extends FlyingCyborg { }
 
@@ -39,9 +39,9 @@ Yes, thank you Java 8! Now we can work around all these nasty impediments<sup>[ 
 Easy as f**k: we create an interface RunningCyborg with one default method `run`, and make our lovely pets to implement this interface. This way our cyborgs will inherit `run` behaviour:
 {% highlight java %}
 public interface RunningCyborg {
-	default void run() {
-		//implementation goes here e.g. move legs, or wheels
-	}
+    default void run() {
+        //implementation goes here e.g. move legs, or wheels
+    }
 }
 
 public class Duck extends FlyingCyborg implements RunningCyborg { }
@@ -53,9 +53,9 @@ Voilà! Our pets can now `fly` and `run`. There’s one optimization though: mak
 Now, your pets will have to sleep, won’t they? 
 {% highlight java %}
 public interface SleepingCyborg {
-	default sleep() { 
-		//implementation goes here e.g. shut systems down
-	}
+    default sleep() { 
+        //implementation goes here e.g. shut systems down
+    }
 }
 
 public class Duck extends FlyingCyborg implements RunningCyborg, SleepingCyborg { }
