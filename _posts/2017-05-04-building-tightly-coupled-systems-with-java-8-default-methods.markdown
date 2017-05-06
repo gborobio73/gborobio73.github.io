@@ -71,6 +71,7 @@ And so on, and so forth. Beautiful, isn’t it?
 
 As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way. It's the wild wild west.
 
+---
 
 <a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)<br>
 <a name="fnTwo">(2)</a>	No, of course not.<br>
