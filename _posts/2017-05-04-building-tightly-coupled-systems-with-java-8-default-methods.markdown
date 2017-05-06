@@ -78,4 +78,4 @@ As weird as all of this might sound, it's happening right now. I’m currently w
 <a name="fnFour">(4)</a> [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))<br>
 <a name="fnFive">(5)</a> [Monolithic application](https://en.wikipedia.org/wiki/Monolithic_application)<br>
 <a name="fnSix">(6)</a> There might be a way you can mock a default method, but you would at least need composition instead of inheritance<br>
-<a name="fnSeven">(7)</a> [Composition vs inheritance: how to choose](https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose)<br>
+<a name="fnSeven">(7)</a> [Composition vs inheritance: how to choose](https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose)
