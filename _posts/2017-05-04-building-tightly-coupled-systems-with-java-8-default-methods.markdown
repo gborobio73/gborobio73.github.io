@@ -37,7 +37,7 @@ It would be great if they could also `run`. But wait, I have a problem: I cannot
 
 Yes, thank you Java 8! Now I can work around all these nasty impediments<sup>[ (4) ](#fnFour)</sup>and make my code great again! 
 
-Easy as f**k: I create an interface RunningCyborg with one default method `run`, and I make my lovely pets to implement this interface. This way my cyborgs will inherit `run` behaviour:
+I create an interface RunningCyborg with one default method `run`, and I make my lovely pets to implement this interface. This way my cyborgs will inherit `run` behaviour:
 {% highlight java %}
 public interface RunningCyborg {
     default void run() {
@@ -49,7 +49,7 @@ public class Duck extends FlyingCyborg implements RunningCyborg { }
 
 public class Owl extends FlyingCyborg implements RunningCyborg { }
 {% endhighlight %}
-Voilà! My pets can now `fly` and `run`. There’s one optimization though, I can make FlyingCyborg to implement RunningCyborg and my pets will inherit `run` out of the box. 
+Voilà! My pets can now `fly` and `run`.
 
 Now, they will have to sleep, won’t they? 
 {% highlight java %}
