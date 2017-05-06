@@ -69,7 +69,7 @@ And so on, and so forth. Beautiful, isn’t it?
 
 “Favour composition over inheritance”, in case you haven’t heard before<sup>[ (7)](#fnSeven)</sup>.
 
-As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way. It's the wild wild west.
+As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way. This leads to the testing ice-cream cone anti-pattern<sup>[ (8)](#fnEight)</sup>, which prevents sustainable development. 
 
 ---
 <a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)<br>
@@ -79,3 +79,4 @@ As weird as all of this might sound, it's happening right now. I’m currently w
 <a name="fnFive">(5)</a> [Monolithic application](https://en.wikipedia.org/wiki/Monolithic_application)<br>
 <a name="fnSix">(6)</a> There might be a way you can mock a default method, but you would at least need composition instead of inheritance<br>
 <a name="fnSeven">(7)</a> [Composition vs inheritance: how to choose](https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose)
+<a name="fnEight">(8)</a> [The testing ice-cream cone anti-pattern (aka inverted pyramid of testing)](https://watirmelon.blog/2012/01/31/introducing-the-software-testing-ice-cream-cone/)
