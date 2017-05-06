@@ -71,16 +71,12 @@ And so on, and so forth. Beautiful, isn’t it?
 
 As weird as all of this might sound, it's happening right now. I’m currently working on a project where default methods are used this way. It's the wild wild west.
 
+
+
 <a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
-
 <a name="fnTwo">(2)</a>	No, of course not.
-
 <a name="fnThree">(3)</a> [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
-
 <a name="fnFour">(4)</a> [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
-
 <a name="fnFive">(5)</a> [Monolithic application](https://en.wikipedia.org/wiki/Monolithic_application)
-
-<a name="fnSix">(6)</a> There might be a way you can mock a default method, but you would at least need a composite instead of inheritance
-
+<a name="fnSix">(6)</a> There might be a way you can mock a default method, but you would at least need composition instead of inheritance
 <a name="fnSeven">(7)</a> [Composition vs inheritance: how to choose](https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose)
