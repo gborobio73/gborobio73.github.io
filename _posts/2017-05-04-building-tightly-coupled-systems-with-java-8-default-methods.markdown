@@ -73,8 +73,8 @@ As weird as all of this might sound, it's happening right now. I’m currently w
 
 
 
-<a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
-<a name="fnTwo">(2)</a>	No, of course not.
+> <a name="fnOne">(1)</a> [Default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
+> <a name="fnTwo">(2)</a>	No, of course not.
 <a name="fnThree">(3)</a> [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 <a name="fnFour">(4)</a> [SOLID principles](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
 <a name="fnFive">(5)</a> [Monolithic application](https://en.wikipedia.org/wiki/Monolithic_application)
