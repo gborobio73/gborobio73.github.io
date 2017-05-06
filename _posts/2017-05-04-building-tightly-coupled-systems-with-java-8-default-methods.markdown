@@ -65,7 +65,7 @@ public class Owl extends FlyingCyborg implements RunningCyborg, SleepingCyborg {
 {% endhighlight %}
 And so on, and so forth. Beautiful, isn’t it?
 
-**No, it's not. It’s horrible!** If you haven’t noticed it, this is me being ***ironic***. This is wrong, really wrong. I have built a tightly coupled system<sup>[ (5)](#fnFive)</sup>. My cyborg pets are tightly coupled to the abstract class and to the interfaces. I cannot test them separately: mocking an abstract base classe is hard and how do I even mock a default method?<sup>[ (6)](#fnSix)</sup>. And how do I test it? My rule of thumb: if you cannot test it, don't write it.
+**No, it's not. It’s horrible!** If you haven’t noticed it, this is me being ***ironic***. This is wrong, really wrong. I have built a tightly coupled system<sup>[ (5)](#fnFive)</sup>. My cyborg pets are tightly coupled to the abstract class and to the interfaces. I cannot test them separately: mocking an abstract base classe is hard and how do I even mock a default method?<sup>[ (6)](#fnSix)</sup>. And how do I test it? My rule of thumb: ***if you cannot test it, don't write it***.
 
 “Favour composition over inheritance”, in case you haven’t heard before<sup>[ (7)](#fnSeven)</sup>.
 
