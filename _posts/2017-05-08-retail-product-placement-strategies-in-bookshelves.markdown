@@ -4,10 +4,6 @@ date:   2017-05-08 18:00:23
 categories: [wines, software development, retail, software teams]
 tags: [wines, software development, retail, software teams]
 ---
-<meta property='og:title' content='Visual product placement techniques applied to team bookshelves'/>
-<meta property='og:image' content='//gborobio73.github.io/images/retail3.jpg'/>
-<meta property='og:description' content='Visual product placement techniques in retail stores should also be applied to development team’s bookshelves'/>
-<meta property='og:url' content='//gborobio73.github.io/2017/retail-product-placement-strategies-in-bookshelves/'/>
 <sub>2 min read</sub>
 
 ![](../../images/retail3.jpg)
