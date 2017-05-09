@@ -13,7 +13,7 @@ Visual product placement techniques in retail stores should also be applied to d
 
 Bookshelves should be placed at the entrance of the team’s area. Every time a team member walks in or out s/he is reminded about what’s crucial, what’s relatively important and what’s not.
 
-In Finland, when buying wines, the cheap ones are placed on the lower shelves, medium-priced are located on eye level and expensive wines are placed on the top shelves. You will also find more medium-priced wines than the other two categories. On a special occasion, you probably buy an expensive wine whereas you go with a much cheaper one if you want to mix it<sup>[(3)](#fnThree)</sup>. But most of the time you just choose something from the medium shelves. Same goes for the books.
+In Finland, when buying wines, the cheap ones are placed on the lower shelves, medium-priced are located on eye level and expensive wines are placed on the top shelves. You will also find more medium-priced wines than the other two categories. On a special occasion, you probably buy an expensive wine whereas you go with a much cheaper one if you want to mix it <sup>[(3)](#fnThree)</sup>. But most of the time you just choose something from the medium shelves. Same goes for the books.
 
 I find it very interesting, when I see must-read books placed on the lower shelves, like cheap wines. In my opinion, eye level books will tell you what that specific development team is good at. Do the experiment yourself: go to your team’s bookshelf and check what’s on the eye level and then cross-check it with what your team is good at. You can tweet me your results at @gborobio.
 
