@@ -20,4 +20,4 @@ I find it very interesting when I see “must read” books placed on the lower 
 ---
 <a name="fnOne">(1)</a> This is a very short list and it's missing important books, but you get my idea.<br> 
 <a name="fnTwo">(2)</a> These kind of books get outdated when a new version of the framework or tool is released.<br> 
-<a name="fnThree">(3)</a> Try to mix it with cola, we call it “kalimotxo” and [it works].(http://www.nytimes.com/2013/05/22/dining/wine-and-cola-it-works.html).
+<a name="fnThree">(3)</a> Try to mix it with cola, we call it “kalimotxo” and [it works](http://www.nytimes.com/2013/05/22/dining/wine-and-cola-it-works.html).
