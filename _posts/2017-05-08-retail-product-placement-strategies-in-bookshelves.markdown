@@ -9,7 +9,7 @@ tags: [wines, software development, retail, software teams]
 Visual product placement techniques in retail stores should also be applied to development team’s bookshelves <sup>[(1)](#fnOne)</sup>: 
 * Eye level: must-read books like McConnell's _Code Complete_, Uncle Bob’s _Clean Code_, M. Fowler’s _Refactoring_, etc.
 * Upper shelves: expert books like machine learning, AI, etc.
-* Lower shelves: books with an expiration date <sup>[(2)](#fnTwo)</sup> like the ones about frameworks, tools, etc.
+* Lower shelves: books with an expiration date like the ones about frameworks, tools, etc. <sup>[(2)](#fnTwo)</sup>
 
 Bookshelves should be placed at the entrance of the team’s area. Every time a team member walks in or out s/he is reminded about what’s crucial, what’s relatively important and what’s not.
 
@@ -22,3 +22,5 @@ I find it very interesting, when I see must-read books placed on the lower shelv
 <a name="fnTwo">(2)</a> These kind of books get outdated when a new version of the framework or tool is released.<br> 
 <a name="fnThree">(3)</a> Try to mix it with cola, we call it “kalimotxo” and [it works](http://www.nytimes.com/2013/05/22/dining/wine-and-cola-it-works.html).
 
+Visual product placement techniques in retail stores should also be applied to development team’s bookshelves.
+http://bit.ly/2pf6YXy
