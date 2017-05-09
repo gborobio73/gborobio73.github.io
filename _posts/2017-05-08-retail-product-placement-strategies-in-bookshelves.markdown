@@ -7,7 +7,7 @@ tags: [wines, software development, retail, software teams]
 <sub>2 min read</sub>
 
 Visual product placement techniques in retail stores should also be applied to development team’s bookshelves <sup>[(1)](#fnOne)</sup>: 
-* Eye level: must-read books like McConnell's Code Complete, Uncle Bob’s Clean Code, M. Fowler’s Refactoring, etc.
+* Eye level: must-read books like McConnell's _Code Complete_, Uncle Bob’s _Clean Code_, M. Fowler’s _Refactoring_, etc.
 * Upper shelves: expert books like machine learning, AI, etc.
 * Lower shelves: books with an expiration date <sup>[(2)](#fnTwo)</sup> like the ones about frameworks, tools, etc.
 
