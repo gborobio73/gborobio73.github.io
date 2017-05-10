@@ -3,6 +3,7 @@ title:  "Visual product placement techniques applied to team's bookshelves"
 date:   2017-05-08 18:00:23
 categories: [wines, software development, retail, software teams]
 tags: [wines, software development, retail, software teams]
+image: https://gborobio73.github.io/images/retail3.jpg
 ---
 <sub>2 min read</sub>
 
