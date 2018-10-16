@@ -1,10 +1,11 @@
 ---
+layout: post
 title:  "Building tightly coupled systems using Java 8 default methods"
-date:   2017-05-02 15:04:23
-categories: [java 8, default methods, coupling, software development]
-tags: [java 8, default methods, coupling, software development]
-image: /images/coupling.jpg
+date: 2017-05-02 
+categories: [java-8, default-methods, coupling, software-development]
 description: Java 8 default methods allows you to build tightly coupled systems that look loosely coupled
+image: "/assets/img/coupling.jpg"
+image-sm: #https://picsum.photos/200/300/?random
 ---
 <sub>4 min read</sub>
 

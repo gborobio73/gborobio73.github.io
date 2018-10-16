@@ -1,10 +1,12 @@
 ---
+layout: post
 title:  "Visual product placement techniques applied to team's bookshelves"
-date:   2017-05-08 18:00:23
-categories: [wines, software development, retail, software teams]
-tags: [wines, software development, retail, software teams]
-image: /images/retail3.jpg
+date: 2017-05-08
+categories: [wines, software-development, retail, teams]
 description: Visual product placement techniques in retail stores should also be applied to development team’s bookshelves
+image: "/assets/img/cover_new.jpg"
+image-sm: #https://picsum.photos/200/300/?random
+
 ---
 <sub>2 min read</sub>
 

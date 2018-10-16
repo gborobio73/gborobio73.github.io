@@ -1,40 +1,48 @@
-# Site settings
+# Site/SEO settings
+email: gborobio@gmail.com
+permalink: /:year/:month/:day/:title/
+google_analytics: 
+
 title: Gonzalo Borobio
-#description: '"This is my site. There are many like it, but this one is mine."'
-description: '"I write blog posts to exorcise my demons."'
-url: 'https://gborobio73.github.io'
-baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+description: 
+url: ""
+baseurl: ""
+twitter_username: "@gborobio"
+default_img: 
 
-author:
-  name: 'Gonzalo Borobio'
-  email: gborobio@gmail.com
-  twitter_username: gborobio
-  facebook_username: 
-  github_username:  gborobio73
-  linkedin_username:  gonzalo-borobio
-
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+# Profile settings
+name: Gonzalo Borobio
+profile_img: "/assets/img/RenderedImage.JPG"
+profile: 
+social:
+  envelope: "gborobio@gmail.com"
+  github: "https://github.com/gborobio73/"
+  medium: "https://medium.com/@gborobio"
+  twitter: "https://twitter.com/gborobio"
+  linkedin: "https://linkedin.com/in/gonzalo-borobio"
 
 # Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
 markdown: kramdown
-highlighter: rouge
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - octopress-autoprefixer
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - _screenshots
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
 
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+# Pagination
+paginate: 5
+paginate_path: "/blog/page-:num"
 
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+# Sass
+sass:
+  style: compressed

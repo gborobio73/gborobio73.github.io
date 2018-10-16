@@ -1,16 +1,21 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html>
+
   {% include head.html %}
 
   <body>
-    {% include header.html %}
 
-    <div class="content-wrapper">
-      <div class="content-wrapper__inner">
-        {{ content }}
-      </div>
+    <main>
 
-      {% include footer.html %}
-    </div>
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
   </body>
+
 </html>

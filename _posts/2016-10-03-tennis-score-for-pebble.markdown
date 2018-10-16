@@ -1,8 +1,11 @@
 ---
+layout: post
 title:  "Tennis Score for Pebble"
-date:   2016-10-03 15:04:23
-categories: [smart watch, software development]
-tags: [pebble, C, tennis]
+date: 2016-10-03
+categories: [pebble, C, tennis]
+description:
+image: "/assets/img/tennis.jpg"
+image-sm: #https://picsum.photos/200/300/?random
 ---
 Do you play tennis and own a [Pebble][pebble] watch? Now you can keep track of the score in your Pebble! <br>
 [**Tennis Score**][pebbleapp] for [Pebble][pebble] tracks points, games, sets and serves. Update the score by pressing a button. Choose between best of 3 or 5 sets; tiebreak for all sets. Shows both current time and match duration. Check the statistics at the end of the match
@@ -55,25 +58,25 @@ Scroll down at the end of the match:
 
 ## Screenshots
 
-![](../../images/pebble-time-round-black-menu.png)
+![](/assets/img/pebble/pebble-time-round-black-menu.png)
 
-![](../../images/pebble-time-red-menu.png)
+![](/assets/img/pebble/pebble-time-red-menu.png)
 
-![](../../images/pebble-time-round-red-score.png)
+![](/assets/img/pebble/pebble-time-round-red-score.png)
 
-![](../../images/pebble-time-black_score.png)
+![](/assets/img/pebble/pebble-time-black_score.png)
 
-![](../../images/pebble-orange-score.png)
+![](/assets/img/pebble/pebble-orange-score.png)
 
-![](../../images/pebble-time-round-black-sets.png)
+![](/assets/img/pebble/pebble-time-round-black-sets.png)
 
-![](../../images/pebble-time-red-points-won.png)
+![](/assets/img/pebble/pebble-time-red-points-won.png)
 
-![](../../images/pebble-time-red-match-duration.png)
+![](/assets/img/pebble/pebble-time-red-match-duration.png)
 
-![](../../images/pebble-time-round-red-sets-duration.png)
+![](/assets/img/pebble/pebble-time-round-red-sets-duration.png)
 
-![](../../images/pebble-time-round-red-sets-duration-2.png)
+![](/assets/img/pebble/pebble-time-round-red-sets-duration-2.png)
 
 
 ## About

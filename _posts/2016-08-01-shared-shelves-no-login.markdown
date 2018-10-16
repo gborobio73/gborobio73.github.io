@@ -1,8 +1,12 @@
 ---
-title:  "Shared Shelves"
-date:   2016-08-01 15:04:23
-categories: [books, software development]
-tags: [books, google cloud]
+layout: post
+title: "Shared Shelves"
+date: 2016-08-01
+categories:
+  ['books', 'software-development', 'google-cloud']
+description:
+image: "/assets/img/bookshelves.jpg"
+image-sm: #https://picsum.photos/200/300/?random
 ---
 
 During the fall 2013, I wanted to introduce AngularJS to the company I was working for. To be able to do that I had to learn it first. Around the same time, my wife and me moved to a new apartment, which made us realize that we had too many books.
