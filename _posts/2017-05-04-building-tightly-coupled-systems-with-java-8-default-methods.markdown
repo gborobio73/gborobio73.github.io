@@ -9,8 +9,6 @@ image-sm: #https://picsum.photos/200/300/?random
 ---
 <sub>4 min read</sub>
 
-![](../../images/coupling.jpg)
-
 One of the new features of Java 8 is the concept of default methods in interfaces<sup>[ (1)](#fnOne)</sup>.
 > “Default methods enable you to add new functionality to the interfaces of your libraries and ensure binary compatibility with code written for older versions of those interfaces”.
 
