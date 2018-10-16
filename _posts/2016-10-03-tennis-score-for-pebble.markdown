@@ -87,5 +87,5 @@ Limitations: [**Tennis Score**][pebbleapp] for [Pebble][pebble] keeps track up t
 
 [**Tennis Score**][pebbleapp] for [Pebble][pebble] is my first ever app for Pebble and it's written in C.
 
-[pebbleapp]: https://apps.getpebble.com/applications/57b1c129bb85ed22da0004ce
+[pebbleapp]: https://apps.rebble.io/en_US/application/57b1c129bb85ed22da0004ce
 [pebble]: https://www.pebble.com/
