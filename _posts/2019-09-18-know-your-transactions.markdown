@@ -29,4 +29,4 @@ It's not easy, but there's no way around it. Centralized or distributed, there m
 
 <br><br>
 <a name="fnOne">(1)</a> There are cases where introducing asynchronous communication is not possible thus a retry strategy must be in place. There are some good libraries for implementing automatic retries and whatnot: Polly for .NET (<https://github.com/App-vNext/Polly> for .NET) and Feign for JAVA (<https://andrewtarry.com/spring_boot_hystrix_feign/>)<br><br>
-<a name="fnTwo">(2)</a>	The fallacy of distributed transaction: https://ayende.com/blog/167362/the-fallacy-of-distributed-transactions<br>
+<a name="fnTwo">(2)</a>	The fallacy of distributed transaction: <https://ayende.com/blog/167362/the-fallacy-of-distributed-transactions><br>
