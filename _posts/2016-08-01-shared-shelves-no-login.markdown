@@ -33,7 +33,7 @@ It's a SPA with a Java backend, all hosted in Google cloud.
 
 Frontend and backend communicate via RESTful interfaces. There are also servlets that deal with log in/out.
 
-I'm still developing it, but not as actively as my other pet project: [Tennis Score for Pebble](http://gborobio73.github.io/2016/tennis-score-for-pebble/)
+I'm still developing it, but not as actively as my other pet project: [Tennis Score for Pebble](https://gborobio73.github.io/2016/10/03/tennis-score-for-pebble/)
 
 Wanna see the [code](https://github.com/gborobio73/tbe)?
 
