@@ -1,0 +1,179 @@
+---
+layout: post
+title:  "To Throw, Or Not To Throw?"
+date: 2020-10-19
+categories: [code, exceptions, typescript, union types]
+description: To Throw, Or Not To Throw? That is the question.
+image: "/assets/img/exceptions.jpg"
+image-sm: "/assets/img/exceptions_sm.jpg"
+
+---
+Here's a quote from one of the most popular books about programming: [The Pragmatic Programmer](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer.html)
+
+
+![alt text](/assets/img/exceptions_quote.jpg "Use Exceptions For Exceptional Problems") (c) The Pragmatic Programmer
+
+**Use Exceptions For Exceptional Problems**
+
+And the key question is: what are exceptional problems? The answer is: it depends, as always.
+
+Let's take a look at this example. I am in the Electric Vehicle (EV) business and I manage some charging stations. Every day I must send my stations to an external system so they are available for EV drivers. To do that, I need to transform the station's connectors types to something the external system understands.
+
+Here's the code for the transformation.
+```ts
+const transformConnectors = (connectors: string[]): string[] => {
+  const transformed: string[] = [];
+  for (const connector of connectors) {
+    switch (connector) {
+      case 'CHAdeMO':
+        transformed.push(connector);
+        break;
+      case 'CCS':
+        transformed.push('CCS Combo 2 Plug (Cable Attached)');
+        break;
+      case 'Mennekes':
+        transformed.push('Type 2 Outlet');
+        break;
+      case 'Schuko':
+        transformed.push('Type F Schuko');
+        break;
+      default:
+        // what should we do here?
+        break;
+    }
+  }
+  return transformed;
+};
+```
+
+What should we do in the default case? It depends on the requirement. Let's assume that it is required that the station is not sent if some of the connectors cannot be transformed. The _error_ approach would be to `throw` an error in the default case and catch in the caller:
+``` javascript
+const transformConnectors = (connectors: string[]): string[] | boolean => {
+  // ..
+      default:
+        throw Error(`Unknown connector ${connector}`);
+        break;
+  // ...
+}
+```
+
+The caller looks like this:
+``` javascript
+const transformStations = (stations: Station[]): TransformedStation[] => {
+  const transformed = TransformedStations[] = [];
+  for (const station of stations) {
+    try {
+      const connectors = transformConnectors(station.connectors);
+      transformed.push(new TransformedStation(connectors));
+    } catch (error) {
+      console.log(error); // we write the error
+    }
+  }
+  return transformed;
+}
+```
+
+This might look ok, but the first thing to notice is that I am logging the error, and that was not in the requirements. Of course, if I remove the `console.log` I have an empty `catch`, and that looks weird. Yes it does, and that is a **good indication** that this might not be an exceptional problem.
+
+One simple solution is to use TypeScript's union types and make `transformConnectors` function return either an array or boolean:
+``` javascript
+const transformConnectors = (connectors: string[]): string[] | boolean => {
+  // ..
+      default:
+        return false;
+        break;
+  // ...
+}
+```
+
+And then caller looks like this:
+``` javascript
+const transformStations = (stations: Station[]): TransformedStation[] => {
+  const transformed = TransformedStations[] = [];
+  for (const station of stations) {
+    const connectors = transformConnectors(station.connectors);
+    if (connectors !== false) {
+      transformed.push(new TransformedStation(connectors));
+    }
+  }
+  return transformed;
+}
+```
+
+Or, you can make `transformConnectors` to return an empty array, and make the caller check the length:
+``` javascript
+const transformConnectors = (connectors: string[]): string[] => {
+  // ..
+      default:
+        return [];
+        break;
+  // ...
+}
+```
+
+The caller checks the length:
+``` javascript
+const transformStations = (stations: Station[]): TransformedStation[] => {
+  const transformed = TransformedStations[] = [];
+  for (const station of stations) {
+    const connectors = transformConnectors(station.connectors);
+    if (connectors.length > 0) {
+      transformed.push(new TransformedStation(connectors));
+    }
+  }
+  return transformed;
+}
+```
+
+Now, if it is also required to **log** the reason why the station was not send, we could use the decorator pattern from OOP to split the logic of logging unknown connectors and transforming the known ones.
+
+``` javascript
+interface ConnectorTransformation {
+  transform(): string[];
+}
+
+class ConnectorTransformationLog implements ConnectorTransformation {
+  private knownConnectors = ['CHAdeMO', 'CCS', 'Mennekes', 'Schuko'];
+
+  constructor(private connectors: string[]) {}
+  transform(): string[] {
+    const unknown: string[] = [];
+    this.connectors.forEach((connector) => {
+      const found = this.knownConnectors.find((type) => type === connector);
+      if (found === undefined) unknown.push(connector);
+    });
+    if (unknown.length > 0) console.log('Unknown connectors', unknown);
+    return this.connectors; // we could also return only the known connectors
+  }
+}
+
+class ConnectorTransformation implements ConnectorTransformation {
+  constructor(private transformation: ConnectorTransformation) {}
+  transform(): string[] {
+    const transformed: string[] = [];
+    const connectors = this.transformation.transform();
+    for (const connector of connectors) {
+      // here comes the switch case. The default branch does nothing
+    }
+    return transformed;
+  }
+}
+```
+
+And the caller looks like this:
+``` javascript
+const transformStations = (stations: Station[]): TransformedStation[] => {
+  const transformed = TransformedStations[] = [];
+  for (const station of stations) {
+    const connectors = new ConnectorTransformation(new ConnectorTransformationLog(station.connectors));
+    if (connectors.length > 0) {
+      transformed.push(new TransformedStation(connectors));
+    }
+  }
+  return transformed;
+}
+```
+
+The only thing left to do is to remove the known connector types repetition: they are defined in both `ConnectorTransformationLog` and `ConnectorTransformation` classes.
+
+Thank you for reading!
